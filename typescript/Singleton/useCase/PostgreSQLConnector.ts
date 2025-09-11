@@ -41,6 +41,7 @@ export default class PostgreSQLConnector implements IDatabaseConnector {
     if (this.connection) {
       this.connection = null
       console.log('Desconectado do PostgreSQL.')
+      process.exit(1)
     }
   }
 }
