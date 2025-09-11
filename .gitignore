@@ -2,6 +2,7 @@
 
 # dependencies
 /typescript/node_modules
+/typescript/package-lock.json
 /.pnp
 .pnp.*
 .yarn/*
