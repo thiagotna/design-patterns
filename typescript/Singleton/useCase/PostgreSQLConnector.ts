@@ -1,4 +1,4 @@
-import { IDatabaseConnector } from '../interface.js'
+import { IDatabaseConnector } from './interface.js'
 import { DataSource } from 'typeorm'
 
 export default class PostgreSQLConnector implements IDatabaseConnector {

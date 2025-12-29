@@ -1,4 +1,4 @@
-import { IDatabaseConnector } from '../interface.js'
+import { IDatabaseConnector } from './interface.js'
 import mongoose, { Mongoose } from 'mongoose'
 
 export default class MongoDBConnector implements IDatabaseConnector {
@@ -7,7 +7,7 @@ export default class MongoDBConnector implements IDatabaseConnector {
 
   private constructor() {}
 
-  public static getInstance(): MongoDBConnector {
+  public static getInstance(): IDatabaseConnector {
     if (!MongoDBConnector.instance) {
       MongoDBConnector.instance = new MongoDBConnector()
     }

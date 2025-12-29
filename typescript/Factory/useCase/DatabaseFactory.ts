@@ -1,4 +1,4 @@
-import { IDatabaseConnector } from '../../Singleton/interface.js'
+import { IDatabaseConnector } from '../../Singleton/useCase/interface.js'
 import MongoDBConnector from '../../Singleton/useCase/MongoDBConnector.js'
 import PostgreSQLConnector from '../../Singleton/useCase/PostgreSQLConnector.js'
 import IDataBaseFactory from '../interface.js'
