@@ -4,7 +4,6 @@ namespace DesignPatterns\Singleton\UseCase;
 
 use MongoDB\Driver\Manager;
 use MongoDB\Driver\Exception\Exception as MongoException;
-use Exception;
 
 class MongoDBConnector
 {
@@ -12,12 +11,6 @@ class MongoDBConnector
   private ?Manager $connection = null;
 
   private function __construct() {}
-
-  private function __clone() {}
-  public function __wakeup()
-  {
-    throw new Exception("Cannot unserialize singleton");
-  }
 
   public static function getInstance(): self
   {

@@ -26,7 +26,6 @@ export default class MongoDBConnector implements IDatabaseConnector {
     } catch (error) {
       console.error('❌ Erro ao conectar com MongoDB:', error)
       process.exit(1)
-      throw error
     }
   }
 
